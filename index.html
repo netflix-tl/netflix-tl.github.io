@@ -151,35 +151,38 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="item">Home</a>
+    <a class="item" href="#home">Home</a>
     <a class="item" href="#about">About</a>
-    <a class="item">Company</a>
-    <a class="item">Careers</a>
+    <a class="item" href="#download">Download</a>
+    <a class="item" href="#donate">Donate</a>
 </div>
 </div>
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <a class="item">Home</a>
+  <a class="item" href="#home">Home</a>
   <a class="item" href="#about">About</a>
-  <a class="item">Company</a>
-  <a class="item">Careers</a>
+  <a class="item" href="#download">Download</a>
+  <a class="item" href="#donate">Donate</a>
 </div>
 
 
 <!-- Page Contents -->
-<div class="pusher">
+<div class="pusher" id="home">
   <div class="ui inverted vertical masthead center aligned segment">
-
     <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
+      <div id="menu1" class="ui large secondary inverted pointing menu">
+          <!-- <video autoplay muted loop id="bgvid">
+              <source src="./assets/videos/example.mp4" type="video/mp4">
+          </video> -->
+
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="item">Home</a>
+        <a class="item" href="#home">Home</a>
         <a class="item" href="#about">About</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
+        <a class="item" href="#download">Download</a>
+        <a class="item" href="#donate">Donate</a>
 <!--         <div class="right item">
           <a class="ui inverted button">Log in</a>
           <a class="ui inverted button">Sign Up</a>
@@ -200,7 +203,7 @@
 
   </div>
 
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe segment" id="about">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
@@ -210,7 +213,10 @@
           <p>We don't care what you post!</p>
  -->        </div>
         <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+          <!-- <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image"> -->
+          <video autoplay muted loop id="bgvid" class="ui large bordered rounded image">
+              <source src="./assets/videos/example.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
       <div class="row">
@@ -222,7 +228,7 @@
   </div>
 
 
-  <div class="ui vertical stripe quote segment">
+  <div class="ui vertical stripe quote segment" id="download">
     <div class="ui equal width stackable internally celled grid">
       <div class="center aligned row">
         <div class="column">
@@ -242,7 +248,7 @@
     </div>
   </div>
 
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe segment" id="donate">
     <div class="ui text container">
       <h3 class="ui header">Donate</h3>
       <p>Please donate to us. We are two poor college students scrounging to get by.</p>
@@ -287,6 +293,7 @@
   </div>
  --></div>
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 </body>
 
 </html>
